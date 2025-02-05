@@ -13,6 +13,8 @@
 #include <math.h>
 
 
+#include "jeu.h"
+#include "sequentiel.h"
 #include "random.h"
 
 #define MAX_TENTATIVES 10
@@ -55,7 +57,7 @@ int password_correct(const char *pseudo, const char *password) {
 void afficher_scores() {
     FILE *fichier = fopen(FILENAME, "r");
     if (fichier == NULL) {
-        printf("Aucun historique trouv�.\n");
+        printf("Aucun historique trouvé.\n");
         return;
     }
 
