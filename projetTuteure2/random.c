@@ -1,7 +1,7 @@
 /*  Name : sequentiel.h
     Purpose : Ensemble des sous-programmes se rapportant
-            � la manipulation et la gestion du fichier .txt cr��
-    Authors : TCHAMIE Bindounow Gnimdou Jepht� & AGBAKOSSI Ekou� Seyram R�n�
+            à la manipulation et la gestion du fichier .txt créé
+    Authors : TCHAMIE Bindounow Gnimdou Jephté & AGBAKOSSI Ekoué Seyram Réné
     Date    : 29/11/2024
 */
 
@@ -21,7 +21,7 @@
 #define MAX_PSEUDO_LENGTH 20
 #define FILENAME "tentatives.txt"
 
-// Fonction pour v�rifier si le pseudo existe d�j� dans le fichier
+// Fonction pour vérifier si le pseudo existe déjé dans le fichier
 int pseudo_existe(const char *pseudo) {
     FILE *fichier = fopen("pseudos.txt", "r");
     if (fichier == NULL) {
