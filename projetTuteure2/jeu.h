@@ -22,4 +22,22 @@ double calculer_ecart_type(int tentatives[], int nombre_tentatives);
 /*  But : Afficher les diff�rents niveaux de difficulté
     Parametres: Aucun
     Return: Rien
- */
+*/
+
+void choisir_difficulte(int *max_nombre, int *max_tentatives);
+/*  But : Gère le choix de la difficulté
+    Parametres: *max_nombre, *max_tentatives
+    Return: Rien
+*/
+
+void boucle_de_jeu(int max_nombre, int max_tentatives, int nombre_a_deviner, int *tentatives, int *nombre_tentatives);
+/*  But : Gère la comparaison du nombre choix par l'utilisateur et le nombre à deviner
+    Parametres: max_nombre, max_tentatives, nombre_a_deviner, *tentatives, *nombre_tentatives
+    Return: Rien
+*/
+
+void saisir_et_valider_pseudo(char *pseudo, char *password);
+/*  But : Gère la vérification du pseudo et du mot de passe
+    Parametres: *pseudo, *password
+    Return: Rien
+*/
